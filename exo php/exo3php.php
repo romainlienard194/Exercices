@@ -11,29 +11,42 @@
             <li><a href="exo1php.php" title="Exercice 1">Exercice 1</a></li>
             <li><a href="exo2_1php.php" title="Exercice 2.1">Exercice 2.1</a></li>
             <li><a href="exo2_2php.php" title="Exercice 2.2">Exercice 2.2</a></li>
+            <li><a href="exo4php.php" title="Exercice 4">Exercice 4</a></li>
         </ul>
     </nav>
+
+    <?php
+    define('NB_COL',3);
+    define('NB_LIG',4);
+    $tableau = ['nom', 'prenom', 'mdp', 'nom1', 'prenom1', 'mdp1', 'nom2', 'prenom2', 'mdp2', 'nom3', 'prenom3', 'mdp3', ''];
+?>
+
 </head>
 <body>
-    <?php
-        $coordonnees = array (
-            array (
-                'nom1' => 'nom1 ',
-                'prenom1' => 'prenom1 ',
-                'motDePasse1' => 'azerty1234 '),
 
-            array (
-                'nom2' => 'nom2 ',
-                'prenom2' => 'prenom2 ',
-                'motDePasse2' => 'azerty1234 '),
-
-            array (
-                'nom3' => 'nom3 ',
-                'prenom3' => 'prenom3 ',
-                'motDePasse3' => 'azerty1234 '),
-            );
-
-           echo '<table ="1"><td>';
+    <?php 
+     //Code source//
+    highlight_file(__FILE__);
     ?>
+
+    <table>
+    <?php
+        for($j = 0; $j < NB_LIG; $j++){
+
+            echo '<tr>';
+        
+        for($i = 0; $i < NB_COL; $i++){
+            $index = $i + $j * NB_COL;
+            $style = 'border : 2px solid black;';
+
+            echo '<td style="'.$style.'">'.$tableau[$index]. '</td>';
+        }
+
+        echo '</tr>';
+    }
+    ?>
+    </table>
+        
+    
 </body>
 </html> 

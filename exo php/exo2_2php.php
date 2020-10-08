@@ -11,6 +11,7 @@
             <li><a href="exo1php.php" title="Exercice 1">Exercice 1</a></li>
             <li><a href="exo2_1php.php" title="Exercice 2.1">Exercice 2.1</a></li>
             <li><a href="exo3php.php" title="Exercice 3">Exercice 3</a></li>
+            <li><a href="exo4php.php" title="Exercice 4">Exercice 4</a></li>
         </ul>
     </nav>
 </head>
@@ -36,8 +37,10 @@
         {
             echo '<td>'. $element. '</td>';
         }
-
-        
+    ?>
+    <?php 
+     //Code source//
+    highlight_file(__FILE__);
     ?>
 </body>
 </html> 
