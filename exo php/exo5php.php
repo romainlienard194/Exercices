@@ -15,7 +15,7 @@
             <li><a href="exo4php.php" title="Exercice 4">Exercice 4</a></li>
             <li><a href="exo6php.php" title="Exercice 6">Exercice 6</a></li>
             <li><a href="exo7php.php" title="Exercice 7">Exercice 7</a></li>
-        </ul>
+        </ul>   
     </nav>
 </head>
 <body>
