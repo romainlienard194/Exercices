@@ -11,5 +11,6 @@
                     <td>ligne6</td>
                 </tr>
         </table>
+<?php
     }
 ?>
